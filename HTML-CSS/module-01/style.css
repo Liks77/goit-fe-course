@@ -1,7 +1,42 @@
+.wrap {
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+    }
+header {
+        margin:77px 315px 100px 315px;
+    }
+li {
+    display: inline-block;
+    margin-right: 90px;
+    }
 .icon {
-    color: blue
+    color: grey;
+}
+a:link {
+    text-decoration: none;
+}
+main {
+    margin: auto;
+    width: 940px;
+}
+.art-img {
+    width: 420px;
+    display: inline-block;
+    margin-right: 45px;
 }
 .img {
-    height: 300px;
-    width: 300px;
+    height: 285px;
+    width: 420px;
+    }
+span {
+    margin-top: 40px;
 }
+button {
+    margin: 100px 100px 10px 500px;
+    height: 55px;
+    width: 165px;
+    font-size: 20px;
+    }
