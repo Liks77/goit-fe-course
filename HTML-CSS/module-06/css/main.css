@@ -1,0 +1,152 @@
+.text-info {
+    font-family: "Kaushan Script";
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.text-info::first-letter {
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.text::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 320px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.icon {
+    width: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+.text-card {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 120px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 10%;
+}
+
+.text-card-info {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    width: 250px;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.text-section {
+    color: #999999;
+    font-family: "Roboto - Light Italic";
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 90px;
+}
+
+.sect-img {
+    width: 380px;
+    margin-bottom: 80px;
+}
+
+.img-for {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.sect-text {
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.box {
+    height: 56px;
+    width: 56px;
+    background-color: #fce38a;
+    position: relative;
+    transition: color 200ms;
+
+}
+
+.iconimg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.hover {
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(to bottom,rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    background-size: contain;
+    position: absolute;
+    top: 0%;
+    box-shadow: 10px 10px #95e1;
+    transition: opacity 200ms;
+    opacity: 0;
+    /* display: none; */
+}
+
+.img-for:hover>.hover {
+    opacity: 1;
+    transform: translate(-10px,-10px);
+    /* display: block; */
+}
+
+.box :hover {
+    background-color: #95e1d3;
+}
