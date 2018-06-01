@@ -1,0 +1,220 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 400;
+    scr: url('fonts/tangerine-v9-latin-regular.woff2') format('woff2'),
+         url('fonts/tangerine-v9-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Baloo Tamma';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/baloo-tamma-v3-latin-regular.woff2') format('woff2'),
+         url('fonts/baloo-tamma-v3-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/montserrat-v12-latin-regular.woff2') format('woff2'), 
+         url('fonts/montserrat-v12-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+         url('fonts/montserrat-v12-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'),
+         url('fonts/roboto-slab-v7-latin-regular.woff') format('woff');
+}
+
+.wrapper {
+    background-color: #fff;
+}
+
+.container {
+    width: 68%;
+    margin: auto;
+    /* background-color: #fff; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 9rem;
+}
+
+.link {
+    display: block;
+    font-family: 'Tangerine', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    color: #fed136;
+}
+
+.header-link {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.link-off {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 3rem;
+    color: #222222;
+    transition: color 1s;
+}
+
+.link-off:hover {
+    color: #fed136;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.content-title {
+    width: 38%;
+    margin: auto;
+    /* padding-left: 1rem; */
+    font-family: 'Baloo Tamma', sans-serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #777777;
+    padding-bottom: 5.7rem;
+}
+
+.flex-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 30%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.img-card {
+    display: block;
+    margin: auto;
+    padding-bottom: 1.4rem;
+}
+
+.title-card {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #222222;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.card-content {
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+    color: #777777;
+}
+
+.sect-one {
+    margin-bottom: 8.5rem;
+}
+
+.wrapper-two {
+    background-image: url(img/map.png);
+    background-color: #222222;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.title-two {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-top: 7.5rem;
+    padding-bottom: 1.7rem;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: top;
+    margin-bottom: 1.5rem;
+}
+.poluchitsa {
+    flex-basis: 40%;
+}
+
+.hren {
+    margin-bottom: 1.5rem;
+    display: block;
+    height: 3rem;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+
+}
+
+.textarea {
+    flex-basis: 40%;
+    height: 12rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+
+}
+
+input:valid { 
+    outline-color: green;
+}
+
+input:invalid {
+    outline-color: red;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background-color: #fed136;
+    width: 20%;
+    height: 4rem;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
