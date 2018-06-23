@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logo {
+    font-family: Montserrat;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav {
+    flex-basis: 32%;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__text-links {
+    font-family: Montserrat;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0.75rem;
+    transition: color 300ms;
+}
+
+.nav__icons {
+    width: 1rem;
+    height: 1rem;
+    fill: #ffffff;
+}
+
+.nav__text-links:hover>.nav__icons {
+    fill: #fce38a;
+}
+
+.nav__text-links:hover {
+    color: #fce38a;
+    border-bottom: 0.2rem solid #fce38a;
+}
+
+.title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.name {
+    font-family: Montserrat;
+    text-align: center;
+    padding: 10.25rem 0 14.38rem;
+    font-size: 4.5rem;
+    color: #ffffff;
+}
+
+.btn {
+    padding: 0.5625rem 1.938rem;
+    background-color: transparent;
+    border: 0.1875rem solid #ffffff;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+}

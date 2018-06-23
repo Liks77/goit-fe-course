@@ -1,0 +1,17 @@
+.wrapper {
+    min-width: 20rem;
+    max-width: 100rem;
+}
+
+.wrapper--img {
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/layer-15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@media(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .wrapper-img {
+        background-image: url(../img/layer-15@2x.jpg);
+    }
+}

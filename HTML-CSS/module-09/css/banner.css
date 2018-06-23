@@ -1,0 +1,129 @@
+.bg-image {
+  background-image: url("../img/banner-320.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner {
+  margin-bottom: 4.25rem;
+}
+.header {
+  padding: 2rem 0 8.75rem 0;
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+}
+.logo {
+  display: block;
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 7.25rem;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu-item {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+.link {
+  padding: 0.5rem 1.25rem;
+  color: #ffffff;
+  margin-right: 2rem;
+  transition: all 300ms ease-in;
+}
+
+.link:hover {
+  background-color: #080808;
+  border: 0.1rem solid #ffffff;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+.banner-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 2.25rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+}
+.banner-text {
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+.banner-btn {
+  color: #ffffff;
+  font-size: 0.875rem;
+  vertical-align: center;
+  font-weight: bold;
+  padding: 0.7rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1.6rem;
+  border: 0.1rem solid #ff4e50;
+  background-color: #ff4e50;
+  margin-top: 1.25rem;
+  width: 100%;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.banner-btn:hover {
+  color: #ff4e50;
+  background-color: #080808;
+  border: 0.1rem solid #ff4e50;
+}
+
+@media (min-width: 576px) {
+  .bg-image {
+    background-image: url("../img/banner-768.jpg");
+  }
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .logo {
+    text-align: left;
+    margin-top: 0;
+    line-height: 1.3rem;
+    vertical-align: center;
+  }
+  .menu {
+    justify-content: flex-end;
+  }
+  .banner-title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-top: 7rem;
+  }
+  .banner-btn {
+    width: auto;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-image {
+    background-image: url("../img/banner-1440.jpg");
+  }
+  .header {
+    padding: 2rem 0 14.625rem 0;
+  }
+  .banner-title {
+    margin-top: 9.5rem;
+  }
+}
