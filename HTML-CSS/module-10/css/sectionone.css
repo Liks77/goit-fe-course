@@ -8,7 +8,6 @@
 .logo {
     font-family: Montserrat;
     font-size: 2rem;
-    text-transform: uppercase;
     font-weight: 700;
     color: #ffffff;
 }
@@ -29,15 +28,16 @@
     color: #ffffff;
     padding: 0.75rem;
     transition: color 300ms;
+    cursor: pointer;
 }
 
-.nav__icons {
+.nav__icon {
     width: 1rem;
     height: 1rem;
     fill: #ffffff;
 }
 
-.nav__text-links:hover>.nav__icons {
+.nav__text-links:hover>.nav__icon {
     fill: #fce38a;
 }
 
@@ -47,28 +47,220 @@
 }
 
 .title {
-    font-family: Montserrat;
+    padding-top: 4rem;
+    font-family: "Kaushan Script", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000;
+}
+
+.title--big {
+    text-transform: capitalize;
+    font-size: 4.5rem;
+    padding-top: 10rem;
     color: #ffffff;
 }
 
 .name {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     text-align: center;
-    padding: 10.25rem 0 14.38rem;
-    font-size: 4.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #000;
+}
+
+.name--big {
+    font-size: 9.5rem;
     color: #ffffff;
+    margin-bottom: 9rem;
+}
+
+.name--after::after{
+    display: block;
+    content: '';
+    width: 10%;
+    margin: 2rem auto 4rem;
+    border:0.2rem solid #f38181;
+    background-color:#f38181;
 }
 
 .btn {
-    padding: 0.5625rem 1.938rem;
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1rem;
     background-color: transparent;
-    border: 0.1875rem solid #ffffff;
+    border: 0.2rem solid #ffffff;
+    font-family: Montserrat, sans-serif;
     text-transform: uppercase;
+    font-weight: 700;
     color: #ffffff;
+    cursor: pointer;
+}
+
+.text {
+    color: #999999;
+    font-family: Roboto, serif;
+    line-height: 1.2rem;
+}
+
+.text--center {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.amazing {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amazing__card {
+    flex-basis: 30%;
+    margin-bottom: 3rem;
+}
+
+.amazing__card:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.amazing__name {
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 1rem 0 1rem;
+}
+
+.amazing__name--normal {
+    text-transform: none;
+}
+
+.amazing__name--center {
+text-align: center;
+display: block;
+}
+
+.amazing__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #95e1d3;
+    display: inline-block;
+}
+
+.amazing__img {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.text--right {
+    padding-left: 4rem;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.team__head {
+    flex-basis: 30%;
+    position: relative;
+    transition: all 300ms;
+}
+
+.team__img--hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    width: 100%;
+    height: 88%;
+    box-shadow: 5px 10px #95e1d3;
+    transition: all 300ms;
+    opacity: 0;
+}
+
+.team__img--hover:hover {
+    opacity: 1;
+}
+
+.team__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+}
+
+.team__icons {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    flex-basis: 24%;
+    background-color: #fce38a;
+    margin: auto;
+    transition: all 300ms;
+}
+
+.team__icons:hover {
+    background-color: #f38181;
+}
+
+.team__icons:hover>.team__card {
+    fill: #ffffff;
+}
+
+
+.team__description {
     font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 400;
+    font-style: italic;
+    color: #999999;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.08rem solid #999999;
+}
+
+.footer__laac {
+    flex-basis: 30%;
+    display: inline-block;
+}
+
+.footer__link {
+    display: inline-block;
+    color: #f38181;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+.form__input {
+    flex-basis: 20%;
+    color: #999999;
+    font-family: Roboto, serif;
+    font-style: italic;
+    padding: 0.4rem;
+}
+
+.btn--footer {
+    background-color: #95e1d3;
+    flex-basis: 20%;
+}
+
+.team__card {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #f38181;
+    margin: auto;
 }
