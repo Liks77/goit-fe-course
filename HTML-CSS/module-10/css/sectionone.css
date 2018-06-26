@@ -1,6 +1,12 @@
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 1rem;
 }
@@ -13,11 +19,16 @@
 }
 
 .nav {
+    -ms-flex-preferred-size: 32%;
     flex-basis: 32%;
 }
 
 .nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -27,6 +38,8 @@
     text-transform: uppercase;
     color: #ffffff;
     padding: 0.75rem;
+    -webkit-transition: color 300ms;
+    -o-transition: color 300ms;
     transition: color 300ms;
     cursor: pointer;
 }
@@ -111,11 +124,15 @@
 }
 
 .amazing {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .amazing__card {
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     margin-bottom: 3rem;
 }
@@ -158,15 +175,22 @@ display: block;
 }
 
 .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
     margin-bottom: 3rem;
 }
 
 .team__head {
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     position: relative;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
     transition: all 300ms;
 }
 
@@ -174,10 +198,16 @@ display: block;
     position: absolute;
     top: 0;
     left: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+    background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     width: 100%;
     height: 88%;
+    -webkit-box-shadow: 5px 10px #95e1d3;
     box-shadow: 5px 10px #95e1d3;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
     transition: all 300ms;
     opacity: 0;
 }
@@ -190,8 +220,14 @@ display: block;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     width: 60%;
     margin: auto;
@@ -200,11 +236,18 @@ display: block;
 .team__icons {
     width: 3rem;
     height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-preferred-size: 24%;
     flex-basis: 24%;
     background-color: #fce38a;
     margin: auto;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
     transition: all 300ms;
 }
 
@@ -226,12 +269,17 @@ display: block;
 }
 
 .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     border-top: 0.08rem solid #999999;
 }
 
 .footer__laac {
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     display: inline-block;
 }
@@ -242,10 +290,15 @@ display: block;
 }
 
 .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .form__input {
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
     color: #999999;
     font-family: Roboto, serif;
@@ -255,6 +308,7 @@ display: block;
 
 .btn--footer {
     background-color: #95e1d3;
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
 }
 

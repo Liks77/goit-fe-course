@@ -4,12 +4,15 @@
 }
 
 .wrapper--img {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../img/layer-15.jpg);
+    background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/layer-15.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/layer-15.jpg);
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/layer-15.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media(min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .wrapper-img {
         background-image: url(../img/layer-15@2x.jpg);
     }
